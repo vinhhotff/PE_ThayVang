@@ -17,6 +17,7 @@ export default function EditBook({ params }: { params: Promise<{ id: string }> }
 
   useEffect(() => {
     fetchBook();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchBook = async () => {
@@ -174,6 +175,7 @@ export default function EditBook({ params }: { params: Promise<{ id: string }> }
                 <div className="mt-4 p-4 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl">
                   <p className="text-sm text-gray-600 mb-2">Preview:</p>
                   <div className="relative h-48 w-full rounded-lg overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img 
                       src={coverImage} 
                       alt="Preview" 

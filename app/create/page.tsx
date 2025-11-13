@@ -133,6 +133,7 @@ export default function CreateBook() {
                 <div className="mt-4 p-4 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl">
                   <p className="text-sm text-gray-600 mb-2">Preview:</p>
                   <div className="relative h-48 w-full rounded-lg overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img 
                       src={coverImage} 
                       alt="Preview" 
